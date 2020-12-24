@@ -7,14 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3104D62E259370E700BAE3DA /* Patterns.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3104D62D259370E700BAE3DA /* Patterns.bundle */; };
+		3104D6322593823B00BAE3DA /* NSString+XAlign.m in Sources */ = {isa = PBXBuildFile; fileRef = 3104D6302593823B00BAE3DA /* NSString+XAlign.m */; };
+		3191B0B925930EA8009AF511 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3191B0B825930EA8009AF511 /* XcodeKit.framework */; };
+		3191B0BA25930EA8009AF511 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3191B0B825930EA8009AF511 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3191B0CA25932183009AF511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3191B0C925932183009AF511 /* Foundation.framework */; };
+		3191B0FE259366E9009AF511 /* PatternManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3191B0FD259366E9009AF511 /* PatternManager.m */; };
 		31E65EB82592E9BF00BC156B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E65EB72592E9BF00BC156B /* AppDelegate.m */; };
 		31E65EBB2592E9BF00BC156B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E65EBA2592E9BF00BC156B /* ViewController.m */; };
 		31E65EBD2592E9C200BC156B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E65EBC2592E9C200BC156B /* Assets.xcassets */; };
 		31E65EC02592E9C200BC156B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31E65EBE2592E9C200BC156B /* Main.storyboard */; };
 		31E65EC32592E9C200BC156B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E65EC22592E9C200BC156B /* main.m */; };
+		31E65ED22592E9D800BC156B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E65ED12592E9D800BC156B /* Cocoa.framework */; };
+		31E65ED82592E9D800BC156B /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E65ED72592E9D800BC156B /* SourceEditorExtension.m */; };
+		31E65EDB2592E9D800BC156B /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E65EDA2592E9D800BC156B /* SourceEditorCommand.m */; };
+		31E65EE02592E9D800BC156B /* XAlignNewExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 31E65ECF2592E9D800BC156B /* XAlignNewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		31E65EDE2592E9D800BC156B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31E65EAB2592E9BF00BC156B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31E65ECE2592E9D800BC156B;
+			remoteInfo = XAlignNewExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31E65EE42592E9D800BC156B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				31E65EE02592E9D800BC156B /* XAlignNewExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E65EEA2592EABF00BC156B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3191B0BA25930EA8009AF511 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3104D62D259370E700BAE3DA /* Patterns.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Patterns.bundle; sourceTree = "<group>"; };
+		3104D6302593823B00BAE3DA /* NSString+XAlign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XAlign.m"; sourceTree = "<group>"; };
+		3104D6312593823B00BAE3DA /* NSString+XAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XAlign.h"; sourceTree = "<group>"; };
+		3191B0B825930EA8009AF511 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		3191B0C925932183009AF511 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3191B0FC259366E9009AF511 /* PatternManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatternManager.h; sourceTree = "<group>"; };
+		3191B0FD259366E9009AF511 /* PatternManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatternManager.m; sourceTree = "<group>"; };
 		31E65EB32592E9BF00BC156B /* XAlignNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XAlignNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E65EB62592E9BF00BC156B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31E65EB72592E9BF00BC156B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -25,6 +77,14 @@
 		31E65EC12592E9C200BC156B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31E65EC22592E9C200BC156B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31E65EC42592E9C200BC156B /* XAlignNew.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XAlignNew.entitlements; sourceTree = "<group>"; };
+		31E65ECF2592E9D800BC156B /* XAlignNewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XAlignNewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E65ED12592E9D800BC156B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		31E65ED62592E9D800BC156B /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		31E65ED72592E9D800BC156B /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		31E65ED92592E9D800BC156B /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		31E65EDA2592E9D800BC156B /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		31E65EDC2592E9D800BC156B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E65EDD2592E9D800BC156B /* XAlignNewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XAlignNewExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,13 +95,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		31E65ECC2592E9D800BC156B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E65ED22592E9D800BC156B /* Cocoa.framework in Frameworks */,
+				3191B0CA25932183009AF511 /* Foundation.framework in Frameworks */,
+				3191B0B925930EA8009AF511 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3191B0FB259366AB009AF511 /* XAlignNew */ = {
+			isa = PBXGroup;
+			children = (
+				3104D6312593823B00BAE3DA /* NSString+XAlign.h */,
+				3104D6302593823B00BAE3DA /* NSString+XAlign.m */,
+				3104D62D259370E700BAE3DA /* Patterns.bundle */,
+				3191B0FC259366E9009AF511 /* PatternManager.h */,
+				3191B0FD259366E9009AF511 /* PatternManager.m */,
+			);
+			path = XAlignNew;
+			sourceTree = "<group>";
+		};
 		31E65EAA2592E9BF00BC156B = {
 			isa = PBXGroup;
 			children = (
 				31E65EB52592E9BF00BC156B /* XAlignNew */,
+				31E65ED52592E9D800BC156B /* XAlignNewExtension */,
+				31E65ED02592E9D800BC156B /* Frameworks */,
 				31E65EB42592E9BF00BC156B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				31E65EB32592E9BF00BC156B /* XAlignNew.app */,
+				31E65ECF2592E9D800BC156B /* XAlignNewExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +155,30 @@
 			path = XAlignNew;
 			sourceTree = "<group>";
 		};
+		31E65ED02592E9D800BC156B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3191B0C925932183009AF511 /* Foundation.framework */,
+				3191B0B825930EA8009AF511 /* XcodeKit.framework */,
+				31E65ED12592E9D800BC156B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31E65ED52592E9D800BC156B /* XAlignNewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3191B0FB259366AB009AF511 /* XAlignNew */,
+				31E65ED62592E9D800BC156B /* SourceEditorExtension.h */,
+				31E65ED72592E9D800BC156B /* SourceEditorExtension.m */,
+				31E65ED92592E9D800BC156B /* SourceEditorCommand.h */,
+				31E65EDA2592E9D800BC156B /* SourceEditorCommand.m */,
+				31E65EDC2592E9D800BC156B /* Info.plist */,
+				31E65EDD2592E9D800BC156B /* XAlignNewExtension.entitlements */,
+			);
+			path = XAlignNewExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,15 +189,35 @@
 				31E65EAF2592E9BF00BC156B /* Sources */,
 				31E65EB02592E9BF00BC156B /* Frameworks */,
 				31E65EB12592E9BF00BC156B /* Resources */,
+				31E65EE42592E9D800BC156B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				31E65EDF2592E9D800BC156B /* PBXTargetDependency */,
 			);
 			name = XAlignNew;
 			productName = XAlignNew;
 			productReference = 31E65EB32592E9BF00BC156B /* XAlignNew.app */;
 			productType = "com.apple.product-type.application";
+		};
+		31E65ECE2592E9D800BC156B /* XAlignNewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E65EE12592E9D800BC156B /* Build configuration list for PBXNativeTarget "XAlignNewExtension" */;
+			buildPhases = (
+				31E65ECB2592E9D800BC156B /* Sources */,
+				31E65ECC2592E9D800BC156B /* Frameworks */,
+				31E65ECD2592E9D800BC156B /* Resources */,
+				31E65EEA2592EABF00BC156B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XAlignNewExtension;
+			productName = XAlignNewExtension;
+			productReference = 31E65ECF2592E9D800BC156B /* XAlignNewExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +228,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					31E65EB22592E9BF00BC156B = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					31E65ECE2592E9D800BC156B = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -117,6 +249,7 @@
 			projectRoot = "";
 			targets = (
 				31E65EB22592E9BF00BC156B /* XAlignNew */,
+				31E65ECE2592E9D800BC156B /* XAlignNewExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +261,14 @@
 			files = (
 				31E65EBD2592E9C200BC156B /* Assets.xcassets in Resources */,
 				31E65EC02592E9C200BC156B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E65ECD2592E9D800BC156B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3104D62E259370E700BAE3DA /* Patterns.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +285,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		31E65ECB2592E9D800BC156B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E65ED82592E9D800BC156B /* SourceEditorExtension.m in Sources */,
+				31E65EDB2592E9D800BC156B /* SourceEditorCommand.m in Sources */,
+				3104D6322593823B00BAE3DA /* NSString+XAlign.m in Sources */,
+				3191B0FE259366E9009AF511 /* PatternManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31E65EDF2592E9D800BC156B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31E65ECE2592E9D800BC156B /* XAlignNewExtension */;
+			targetProxy = 31E65EDE2592E9D800BC156B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		31E65EBE2592E9C200BC156B /* Main.storyboard */ = {
@@ -309,6 +469,46 @@
 			};
 			name = Release;
 		};
+		31E65EE22592E9D800BC156B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XAlignNewExtension/XAlignNewExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57E3993B9H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = XAlignNewExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.lxl.XAlignNew.XAlignNewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31E65EE32592E9D800BC156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XAlignNewExtension/XAlignNewExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57E3993B9H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = XAlignNewExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.lxl.XAlignNew.XAlignNewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -326,6 +526,15 @@
 			buildConfigurations = (
 				31E65EC82592E9C200BC156B /* Debug */,
 				31E65EC92592E9C200BC156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E65EE12592E9D800BC156B /* Build configuration list for PBXNativeTarget "XAlignNewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E65EE22592E9D800BC156B /* Debug */,
+				31E65EE32592E9D800BC156B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
